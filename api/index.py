@@ -1,2 +1,6 @@
 def handler(request):
-    return "KLT Backend API is running.", 200, {"Content-Type": "text/plain"}
+    return {
+        "statusCode": 200,
+        "headers": {"Content-Type": "text/plain"},
+        "body": "KLT Backend API is running."
+    }
