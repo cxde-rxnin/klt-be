@@ -1,4 +1,2 @@
-from werkzeug.wrappers import Response
-
 def handler(request):
-    return Response("KLT Backend API is running.", mimetype="text/plain")
+    return "KLT Backend API is running.", 200, {"Content-Type": "text/plain"}
